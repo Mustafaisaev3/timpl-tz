@@ -1,18 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Header />
+    <Marquee :texts="['Part of the profit goes to sWen', 'By leaving a tip, you take care of nature', 'Part of the profit goes to sWen', 'By leaving a tip, you take care of nature']" />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+<script setup lang="ts">
+import Header from '@/components/Header.vue';
+import Marquee from '@/components/shared/Marquee.vue';
 </script>
