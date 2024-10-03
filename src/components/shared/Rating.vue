@@ -52,13 +52,12 @@ const setRating = (rating: number) => {
     width: 100%;
     height: 1px;
     background-color: #9771FD;
-    margin: 0 10px;
   }
 
   &__title {
     font-size: 15px;
     white-space: nowrap;
-    margin: 0;
+    margin: 0 10px;
   }
 
   &__stars {
