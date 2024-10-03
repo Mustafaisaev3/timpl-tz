@@ -6,6 +6,7 @@
     <Tips />
     <Rating :title="'Rate your experience'" />
     <Togle />
+    <Multitabs />
   </div>
 </template>
 
@@ -16,4 +17,5 @@ import UserProfile from '@/components/shared/UserProfile.vue';
 import Tips from '@/components/shared/Tips.vue';
 import Rating from '@/components/shared/Rating.vue';
 import Togle from '@/components/shared/Togle.vue';
+import Multitabs from '@/components/shared/Multitabs.vue';
 </script>
