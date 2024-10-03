@@ -9,22 +9,35 @@
         text="Pay with"
         variant="primary"
         :icon="apple_pay"
+        @click="openModal"
       />
       <Button
         text="Pay with debit card"
         variant="secondary"
+        @click="openModal"
       />
     </div>
     <p class="footer__terms">
       By clicking the button, you agree to our <span>Terms of Use</span> and <span>Privacy Policy</span>, and <span>authorize payment</span> and <span>data processing</span>.
     </p>
+    <Modal :isOpen="isModalOpen" @update:isOpen="isModalOpen = $event">
+      <ModalView />
+    </Modal>
   </footer>
 </template>
 
 <script setup lang="ts">
-import Button from '@/components/ui/Button.vue'
+import { ref } from 'vue';
+import Modal from '@/components/ui/Modal.vue';
+import Button from '@/components/ui/Button.vue';
+import ModalView from '@/components/shared/ModalView.vue';
 
 const apple_pay = require('@/assets/images/icons/apple-pay.svg')
+
+const isModalOpen = ref(false);
+const openModal = () => {
+  isModalOpen.value = true;
+};
 </script>
 
 <style lang="scss" scoped>
