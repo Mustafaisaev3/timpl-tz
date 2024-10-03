@@ -15,13 +15,14 @@ import Switch from '@/components/ui/Switch.vue'
 .togle {
   width: auto;
   height: auto;
-  border-radius: 12px;
   margin-top: 12px;
   margin-inline: 20px;
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
 
   &__content {
     display: flex;

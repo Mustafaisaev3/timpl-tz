@@ -1,8 +1,10 @@
 <template>
   <div class="tips-component">
-    <h1 class="tips-component__title">Enter amount of tips</h1>
-    <div :class="['tips-component__amount', { 'tips-component__amount--transparent': amount === 0 }]">
-      {{ amount }}€
+    <div class="tips-component__container">
+      <h1 class="tips-component__title">Enter amount of tips</h1>
+      <div :class="['tips-component__amount', { 'tips-component__amount--transparent': amount === 0 }]">
+        {{ amount }}€
+      </div>
     </div>
     <div class="tips-component__tabs">
       <div
@@ -37,6 +39,13 @@ const selectTab = (tab: number) => {
   margin-top: 20px;
   margin-bottom: 12px;
 
+  &__container {
+    background-color: #fff;
+    padding: 12px 0;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+
   &__title {
     font-size: 12px;
     margin-bottom: 6px;
@@ -46,7 +55,6 @@ const selectTab = (tab: number) => {
     font-size: 34px;
     color: #0f0a2f;
     font-weight: bold;
-    margin-bottom: 24px;
 
     &--transparent {
       opacity: 0.1;

@@ -8,11 +8,12 @@
     <Togle />
     <Multitabs />
     <Feedback />
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/Header.vue';
+import Header from '@/components/layout/Header.vue';
 import Marquee from '@/components/shared/Marquee.vue';
 import UserProfile from '@/components/shared/UserProfile.vue';
 import Tips from '@/components/shared/Tips.vue';
@@ -20,4 +21,5 @@ import Rating from '@/components/shared/Rating.vue';
 import Togle from '@/components/shared/Togle.vue';
 import Multitabs from '@/components/shared/Multitabs.vue';
 import Feedback from '@/components/shared/Feedback.vue';
+import Footer from '@/components/layout/Footer.vue';
 </script>

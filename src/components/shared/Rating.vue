@@ -64,6 +64,8 @@ const setRating = (rating: number) => {
     display: flex;
     justify-content: center;
     padding: 16px 0px;
+    background-color: #fff;
+    border-radius: 20px;
   }
 
   &__star {
