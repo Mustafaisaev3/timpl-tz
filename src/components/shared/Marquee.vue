@@ -4,7 +4,7 @@
       <span v-for="(text, index) in texts" :key="index" class="marquee__item">
         {{ text }}
         <span v-if="index < texts.length - 1" class="marquee__icon">
-          <img src="@/assets/swen-icon.svg" alt="swen-icon">
+          <img src="@/assets/images/icons/swen-icon.svg" alt="swen-icon">
         </span>
       </span>
     </div>
@@ -23,7 +23,7 @@ const props = defineProps<MarqueeProps>();
 
 <style lang="scss" scoped>
 .marquee {
-  background-image: url('@/assets/marquee-bg.svg');
+  background-image: url('@/assets/images/marquee-bg.svg');
   background-size: cover;
   overflow: hidden;
   white-space: nowrap;

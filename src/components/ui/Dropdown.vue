@@ -2,7 +2,7 @@
   <div class="dropdown">
     <div class="selected-item" @click="toggleDropdown">
       {{ selectedItem }}
-      <img src="@/assets/angle-down.svg" alt="angle-down" />
+      <img src="@/assets/images/icons/angle-down.svg" alt="angle-down" />
     </div>
     <div v-if="isOpen" class="dropdown-menu">
       <div

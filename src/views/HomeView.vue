@@ -5,6 +5,7 @@
     <UserProfile />
     <Tips />
     <Rating :title="'Rate your experience'" />
+    <Togle />
   </div>
 </template>
 
@@ -14,4 +15,5 @@ import Marquee from '@/components/shared/Marquee.vue';
 import UserProfile from '@/components/shared/UserProfile.vue';
 import Tips from '@/components/shared/Tips.vue';
 import Rating from '@/components/shared/Rating.vue';
+import Togle from '@/components/shared/Togle.vue';
 </script>

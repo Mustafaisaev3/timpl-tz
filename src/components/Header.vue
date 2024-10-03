@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="logo">
-      <img src="@/assets/logo.svg" alt="Logo" />
+      <img src="@/assets/images/logo.svg" alt="Logo" />
     </div>
     <div class="language-dropdown">
       <Dropdown :items="languages" :default-item="languages[0]" @itemSelected="handleLanguageChange" />
