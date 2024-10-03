@@ -7,6 +7,7 @@
     <Rating :title="'Rate your experience'" />
     <Togle />
     <Multitabs />
+    <Feedback />
   </div>
 </template>
 
@@ -18,4 +19,5 @@ import Tips from '@/components/shared/Tips.vue';
 import Rating from '@/components/shared/Rating.vue';
 import Togle from '@/components/shared/Togle.vue';
 import Multitabs from '@/components/shared/Multitabs.vue';
+import Feedback from '@/components/shared/Feedback.vue';
 </script>
