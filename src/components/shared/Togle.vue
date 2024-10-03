@@ -31,7 +31,9 @@ import Switch from '@/components/ui/Switch.vue'
   }
 
   &__title {
+    color: #000;
     font-size: 14px;
+    font-weight: 600;
   }
   &__subtitle {
     font-size: 12px;

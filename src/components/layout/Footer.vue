@@ -56,6 +56,8 @@ const openModal = () => {
 
     &-total {
       font-size: 15px;
+      color: #000;
+      font-weight: 600;
     }
 
     &-feed {

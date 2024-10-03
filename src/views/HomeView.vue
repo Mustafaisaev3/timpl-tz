@@ -1,28 +1,21 @@
 <template>
   <div class="home">
-    <Header />
-    <Marquee :texts="marqueeText" />
-    <UserProfile />
-    <Tips />
-    <Rating :title="'Rate your experience'" />
-    <Rating :title="'Rate service'" />
-    <Togle />
-    <Multitabs />
-    <Feedback />
-    <Footer />
+    <router-link to="/phone1">Phone1</router-link>
+    <router-link to="/phone2">Phone2</router-link>
+    <router-link to="/phone3">Phone3</router-link>
   </div>
 </template>
 
-<script setup lang="ts">
-import Header from '@/components/layout/Header.vue';
-import Marquee from '@/components/shared/Marquee.vue';
-import UserProfile from '@/components/shared/UserProfile.vue';
-import Tips from '@/components/shared/Tips.vue';
-import Rating from '@/components/shared/Rating.vue';
-import Togle from '@/components/shared/Togle.vue';
-import Multitabs from '@/components/shared/Multitabs.vue';
-import Feedback from '@/components/shared/Feedback.vue';
-import Footer from '@/components/layout/Footer.vue';
-
-const marqueeText = ['Part of the profit goes to sWen', 'By leaving a tip, you take care of nature', 'Part of the profit goes to sWen', 'By leaving a tip, you take care of nature']
-</script>
+<style lang="scss" scoped>
+.home {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+</style>

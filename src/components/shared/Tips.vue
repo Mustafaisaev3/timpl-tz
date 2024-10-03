@@ -54,7 +54,7 @@ const selectTab = (tab: number) => {
   &__amount {
     font-size: 34px;
     color: #0f0a2f;
-    font-weight: bold;
+    font-weight: 900;
 
     &--transparent {
       opacity: 0.1;
@@ -71,6 +71,7 @@ const selectTab = (tab: number) => {
     flex: 1;
     border-radius: 12px;
     background-color: #fff;
+    font-weight: 600;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
